@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "themulti-tf-state" # replace this later after first manual apply
+    bucket = "themulti-tf-state" 
     prefix = "terraform/state"
   }
 }
