@@ -10,3 +10,6 @@ steps:
         terraform apply -auto-approve -input=false -var-file="terraform.tfvars"
 
 timeout: 900s
+
+options:
+  logsBucket: gs://themulti-tf-state
