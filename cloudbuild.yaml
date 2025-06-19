@@ -1,0 +1,12 @@
+steps:
+  - name: 'hashicorp/terraform:1.6.6'
+    entrypoint: 'sh'
+    args:
+      - '-c'
+      - |
+        echo "Starting Terraform deployment..."
+        cd terraform
+        terraform init
+        terraform apply -auto-approve -input=false -var-file="terraform.tfvars"
+
+timeout: 900s
