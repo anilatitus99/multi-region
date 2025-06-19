@@ -12,4 +12,4 @@ steps:
 timeout: 900s
 
 options:
-  logsBucket: gs://themulti-tf-state
+  logging: CLOUD_LOGGING_ONLY
